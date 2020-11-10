@@ -32,7 +32,7 @@
 \renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
 
 \usepackage{hyperref} % Required for adding links	and customizing them
-\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+\hypersetup{colorlinks, breaklinks, urlcolor=Blue, linkcolor=Blue} % Set link colors
 
 \newlength{\datebox}\settowidth{\datebox}{September 2014} % Set the width of the date box in each block
 
@@ -44,10 +44,11 @@
 %George changes
 \usepackage[left=4.5cm,right=2cm, top=2.2cm, bottom=2.2cm]{geometry}
 
+\usepackage{xcolor}
 \newcommand{\Sectiontitle}{\noindent\spacedlowsmallcaps}
 
 %removed \raggedright after \noindent
-\pagenumbering{gobble}
+%\pagenumbering{gobble}
 
 %----------------------------------------------------------------------------------------
 
@@ -61,7 +62,6 @@
 
 \begin{cv}{\spacedallcaps{George Kour}}\vspace{1.5em} % Your name
 
-\Sectiontitle{Personal Information}\vspace{0.5em} % Personal information heading
 
 %\NewEntry{year of Birth}{1985} % Birthplace and date
 
@@ -69,15 +69,16 @@
 
 \NewEntry{E-mail}{\href{mailto:kourgeorge@gmail.com}{kourgeorge@gmail.com}} % Email address
 
+\NewEntry{Phone}{(M) 052-5808010} % Phone number(s)
+
 \NewEntry{Website}{\href{kour.me}{kour.me}}
 
 \NewEntry{Linked-In Page}{\href{http://il.linkedin.com/in/georgekour/}{http://il.linkedin.com/in/georgekour/}} % Personal website
 
 \NewEntry{Researcher Page}{\href{http://researcher.ibm.com/researcher/view.php?person=ibm-GKOUR}{http://researcher.ibm.com/researcher/view.php?person=ibm-GKOUR}} % Personal website
 
-\NewEntry{Phone}{(M) 052-5808010} % Phone number(s)
 
-\vspace{2em} % Extra white space between the personal information section and goal
+\vspace{1.5em} % Extra white space between the personal information section and goal
 
 %----------------------------------------------------------------------------------------
 %	Goal
@@ -93,8 +94,7 @@
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\Sectiontitle{Work Experience}\vspace{1em}
-
+\Sectiontitle{Work Experience}\vspace{0.5em}
 
 \NewEntry{2017 -- Present}{Research Staff Member}
 
@@ -102,12 +102,21 @@
 Our group study machine learning techniques, especially deep neural networks, for natural language processing application. 
 The main goal of the group is conducting original and valuable research, publish papers at top tier conferences and transferring technologies to relevant business units.
 As a researcher, I am involved in writing research proposal, implementing and training models for various discriminative and generative text related tasks.
-
 }
 
 %------------------------------------------------
 
-\NewEntry{2016 - Present}{Lecturer - Junior Faculty Member}
+\NewEntry{2016 - 2018}{Co-Founder and Senior Researcher}
+
+\Description{\MarginText{\textsc{Lofic}}\textbf{Sagol Department of Neurobiology}\\
+As a collaborative music recording platform Lofic uses AI technologies to redefine music creation.
+My role in the team is to lead and execute the companies research efforts in the field of sound. 
+}
+
+
+%------------------------------------------------
+
+\NewEntry{2016 - 2020}{Lecturer - Junior Faculty Member}
 
 \Description{\MarginText{\textsc{Haifa University}}\textbf{Sagol Department of Neurobiology}\\
 I am a lecturer on scientific programming using MATLAB. 
@@ -147,17 +156,15 @@ I was a member of the client infrastructure team that was responsible for the .N
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
-%\newpage
+\newpage
 
-\Sectiontitle{Education}
-\vspace{1em}
+\Sectiontitle{Education}\vspace{0.5em}
 
 \NewEntry{2016 -- Present}{Ph.D Candidate in Neurobiology}
 
 \Description{\MarginText{\textsc{Haifa University}}\textsc{Sagol Department of Neurobioligy}\ \newline 
 \textbf{Research Intent:} My research aim at elucidating the neural basis of the state representation in the brain.\\
 \textbf{Advisor:} Dr.~Genela \textsc{Morris}}
-
 
 
 \NewEntry{2011 -- 2014}{Master of Science in Electrical Engineering \textsc{(cum laude})}
@@ -186,12 +193,20 @@ I was a member of the client infrastructure team that was responsible for the .N
 %----------------------------------------------------------------------------------------
 
 
-\Sectiontitle{Publications}
-\vspace{1em}
+\Sectiontitle{Publications}\vspace{0.5em}
 
-\NewEntry{Feb. 2020}{Do Not Have Enough Data? Deep Learning to the Rescue!}
+\NewEntry{November 2020}{Balancing via Generation for Multi-Class Text Classification Improvement}
 
-\Description{\textsc{AAAI Conference on Artificial Intelligence (Under Review)} 
+\Description{\textsc{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: Findings} 
+\\
+\textbf{Authors:} Naama Tepper, Esther Goldbraich, Naama Zwerdling, George Kour, Ateret Anaby Tavor, Boaz Carmeli}
+
+%------------------------------------------------
+
+
+\NewEntry{February 2020}{Do Not Have Enough Data? Deep Learning to the Rescue!}
+
+\Description{\textsc{AAAI Conference on Artificial Intelligence} 
 \\
 \textbf{Authors:} Boaz Carmeli, George Kour, Naama Zwerdling, Amir Kantor, Naama Tepper, Segev Shlomov, Esther Goldrich}
 
@@ -221,7 +236,7 @@ I was a member of the client infrastructure team that was responsible for the .N
 \textbf{Authors:} George Kour, Genella Morris}
 
 %------------------------------------------------
-
+%\newpage
 \NewEntry{March 2017}{An Algorithm for Handling Time Prediction of Software Defects} 
 
 \Description{\textsc{International Conference on Computer Science and Information Technology}
@@ -229,7 +244,7 @@ I was a member of the client infrastructure team that was responsible for the .N
 \textbf{Authors:} George Kour, Shaul Strachan, Raz Regev}
 
 %------------------------------------------------
-\NewEntry{Sep. 2016}{Prediction-Based, Prioritized Market-Share Insight Extraction} 
+\NewEntry{September 2016}{Prediction-Based, Prioritized Market-Share Insight Extraction} 
 
 \Description{\textsc{International Conference on Advanced Data Mining and Applications}
 \\
@@ -237,7 +252,7 @@ I was a member of the client infrastructure team that was responsible for the .N
 
 %------------------------------------------------
 
-\NewEntry{Sep. 2014}{Real-time Segmentation of On-line Handwritten Arabic Script}
+\NewEntry{September 2014}{Real-time Segmentation of On-line Handwritten Arabic Script}
 
 \Description{\textsc{International Conference on Frontiers in Handwriting Recognition}
 \\ 
@@ -245,7 +260,7 @@ I was a member of the client infrastructure team that was responsible for the .N
 
 %------------------------------------------------
 
-\NewEntry{Aug. 2014}{Fast Classification of Handwritten On-line Arabic Characters}
+\NewEntry{August 2014}{Fast Classification of Handwritten On-line Arabic Characters}
 
 \Description{\textsc{International Conference of Soft Computing and Pattern Recognition}
 \\
@@ -257,29 +272,49 @@ I was a member of the client infrastructure team that was responsible for the .N
 %----------------------------------------------------------------------------------------
 \vspace{1em}
 
-\Sectiontitle{Patents}
-\vspace{0.5em}
+\Sectiontitle{Patents} \vspace{0.5em}
 
-\NewEntry{March 2018}{Strachan Shaul, Kour George, Regev Raz, inventors; Entit Software LLC, LP, assignee. \textbf{Timing estimations for application lifecycle management work items determined through machine learning}. United States patent application \emph{US20180088939A1}.  
-}\\
+\NewEntry{July 2020}{Removing unnecessary history from reinforcement learning state}
 
-\NewEntry{April 2017}{Strachan Shaul, Kour George, Regev Raz, inventors; Hewlett-Packard Development Company, LP, assignee. \textbf{Using machine learning regression to estimate time for completing application lifecycle management work item}.  United States patent application \emph{WO2017069743A1}.
-}\\
+\Description{\textsc{United States patent application}, US20200210884A1.
+\\
+\textbf{Inventors:} Guy Hadash, Boaz Carmeli, George Kour}
+
+\NewEntry{July 2020}{Deep learning testing}
+
+\Description{\textsc{United States patent application}, US20200210848A1
+\\
+\textbf{Inventors:} George Kour, Guy Hadash, Yftah Ziser, Ofer Lavi, Guy Lev}
 
 
-\NewEntry{October 2016}{Kour George, Toplian Yaniv, Vinik Alon, inventors; Hewlett-Packard Development Company, LP, assignee. \textbf{Quality prediction}. United States patent application \emph{US20160307133A1}.  
-} \\
+\NewEntry{March 2018}{Timing estimations for application lifecycle management work items determined through machine learning}
 
+\Description{\textsc{Granted United States patent}, US10310852B2.
+\\
+\textbf{Inventors:}  Strachan Shaul, Kour George, Regev Raz}
+
+\NewEntry{April 2017}{Using machine learning regression to estimate time for completing application lifecycle management work item}
+
+\Description{\textsc{United States Patent Application}, US20180307998A1.
+\\
+\textbf{Inventors:}  Strachan Shaul, Kour George, Regev Raz}
+
+\NewEntry{October 2016}{Quality prediction}
+
+\Description{\textsc{Granted United States Patent}, US10354210B2.
+\\
+\textbf{Inventors:} Kour George, Toplian Yaniv, Vinik Alon}
 
 %----------------------------------------------------------------------------------------
 %	HONOURS and AWARDS
 %----------------------------------------------------------------------------------------
 
 
-\Sectiontitle{Special Activities, Honours \& Awards}
-\vspace{1em} 
+\Sectiontitle{Special Activities, Honours \& Awards} \vspace{0.5em} 
 \newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
 \settowidth{\langbox}{January201} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{\textsc{IBM}}\parbox{\langbox}{October 2018}$\cdotp$\ \ \textbf{Member of Invention Development Board} - \textsc{Language and Conversion}}
 
 \Description{\MarginText{\textsc{Sadaka-Reut}}\parbox{\langbox}{October 2018}$\cdotp$\ \ \textbf{Member of board of directors} - \textsc{an Arab-Jewish Partnership Organizations}}
 
@@ -293,9 +328,6 @@ I was a member of the client infrastructure team that was responsible for the .N
 
 \Description{\parbox{\langbox}{August 2014}$\cdotp$\ \ \textbf{Innovator Award} - For making a valuable contribution through innovation.}
 
-%\vspace{-0.5em}
-
-%\Description{\parbox{\langbox}{January 2010}$\cdotp$\ \ \textbf{Outstanding Effort Recognition} - For knowledge sharing, motivation and overall invenstment.}
 
 \Description{\MarginText{\textsc{Technion - IIT}}\parbox{\langbox}{Winter 2009 \\ Winter 2008}$\cdotp$\ \ \textbf{Excelled With Praise} - Dean's List.}
 
